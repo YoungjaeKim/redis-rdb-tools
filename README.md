@@ -33,6 +33,10 @@ Parse the dump file and print the JSON on standard output
 
     rdb --command json /var/redis/6379/dump.rdb
     
+Parse the dump file and save to JSON file
+
+    rdb --command json /var/redis/6379/dump.rdb > /var/redis/6379/dump.json
+    
 Only process keys that match the regex
 
     rdb --command json --key "user.*" /var/redis/6379/dump.rdb
